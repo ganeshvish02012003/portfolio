@@ -14,11 +14,9 @@ app.use(express.static(path.join(__dirname, "/public")));
 // let template_ID = process.env.SERVICE_ID
 // let public_Key = process.env.SERVICE_ID
 
-app.get("/", (req, res) => { 
-    res.send("ROOT is working"); 
-});
 
-app.get("/GaneshVishwakarma", (req, res) => {
+
+app.get("/", (req, res) => {
     res.render("index.ejs");
 });
 
